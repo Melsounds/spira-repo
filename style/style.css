@@ -46,7 +46,7 @@ html,body{
     font-size: 48px;
     line-height: 40px;
     text-align: center;
-    font-family: 'Baumans', cursive;
+    font-family: 'Baumans';
     color:#0d438b;
 }
 .onboarding img{
@@ -59,7 +59,7 @@ p.p2{
     height: 80px;
     margin-top: 50px;
     margin-left: 30px;
-    font-family: 'sora' cursive;
+    font-family: 'sora';
     font-weight: 600;
     font-size: 26px;
     line-height: 40px;
@@ -75,7 +75,7 @@ p.p2{
     padding: 24px;
     background-color: #0d438b;
     text-decoration: none;
-    font-family: 'sora' serif;
+    font-family: 'sora';
     font-size: 14px;
     line-height: 20px;
     display: flex;
@@ -95,10 +95,10 @@ p.p2{
     margin-left: 20%;
 }
 .onboarding .span p{
-    font-family: poppins;
+    font-family: 'sora';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
     text-align: center;
     color: #87878c;
@@ -110,10 +110,10 @@ p.p2{
 .onboarding .span .sign-in-btn{
     width: 51px;
     height: 24px;
-    font-family: 'poppins';
+    font-family: 'sora';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -151,9 +151,10 @@ p.p2{
     height: 24px;
     margin-left: 0%;
     text-align: center;
+    
 }
 .title p{
-    font-family: 'sora' serif;
+    font-family: 'sora';
     font-style: normal;
     font-weight: bold;
     font-size: 180%;
@@ -175,7 +176,7 @@ p.p2{
     text-align: none;
 }
 .instruction{
-    width: 77%;
+    width: 90%;
     margin-top: 20px;
 }
 .instruction p{
@@ -285,6 +286,8 @@ input.home{
     justify-content: center;
     margin-top: 30px;
     text-align: center;
+    font-family: 'sora';
+    font-size: 12px;
 }
 .account-details .span p{
     color: #898f9e;
@@ -303,7 +306,7 @@ input.home{
     padding: 24px;
     background-color: #0d438b;
     text-decoration: none;
-    font-family: 'sora' serif;
+    font-family: 'sora';
     font-size: 14px;
     line-height: 20px;
     display: flex;
