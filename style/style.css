@@ -175,8 +175,8 @@ p.p2{
     text-align: none;
 }
 .instruction{
-    width: 75%;
-    margin-top: 8px;
+    width: 77%;
+    margin-top: 20px;
 }
 .instruction p{
     font-family: 'sora';
@@ -277,6 +277,7 @@ input.home{
     border-radius: 12px;
     background: #f7f7f7;
     border: 1px solid #e6e8ec;
+    text-align: center;
 }
 .account-details .span{
     display: flex;
@@ -339,5 +340,123 @@ input.home{
     font-size: 14px;
     line-height: 20px;
     color: #0d438b
+}
+.span-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+.span-bottom p{
+    width: 172px;
+    height: 24px;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #898f9e;
+    text-align: right;
+}
+.span-bottom .sign-in-btn{
+    width: 46px;
+    height: 24px;
+    margin-left: 4px;
+}
+.span-bottom .sign-in-btn a{
+    text-decoration: none;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+/*welcome back styles*/
+.welcome-back .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+.welcome-back .logo{
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.welcome-back .person{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.welcome-back .person img{
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+.welcome-back .form2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.welcome-back .form2 input{
+    margin-left: 3%;
+    padding: 30px 25px;
+}
+.welcome-back .text{
+    width: 100%;
+    height: 32px;
+    margin-top: 20px;
+}
+.welcome-back .text h3{
+    font-family: 'sora';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    color: #2c2c38;
+    margin-top: 30px;
+}
+.welcome-back .text p{
+    width: 100%;
+    height: 16px;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #52596e;
+}
+.welcome-back a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'sora';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.welcome-back .span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.welcome-back .span p{
+    text-align: right;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #898f9e
+}
+.welcome-back .span a{
+    margin-top: 0px;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+
 }
 }
