@@ -1,38 +1,44 @@
-const slider = document.querySelector('.slide-container'),
-slides = Array.from(document.querySelectorAll('.slide'))
 
-let isDragging = false,
-startPos = 0,
-currentTranslate = 0,
-prevTranslate = 0,
-animationID = 0,
-currentyIndex = 0
+const inputs = document.querySelectorAll(".otp-number input");
+inputs.forEach((input, index) =>{
+    input.dataset.index = index;
+    input.addEventListener("paste", handleOtppaste);
+    input.addEventListener("keyup", handleOtp);
+});
 
-slides.forEach((slide, index) => {
-    const slideImage = slide.querySelector('img')
-    slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-
-
-//Touch events
-slide.addEventListener('touchstart', touchStart(index))
-slide.addEventListener('touchend', touchEnd)
-slide.addEventListener('touchmove', touchMove)
-
-
-slide.addEventListener('mousedown', touchStart(index))
-slide.addEventListener('mouseup', touchEnd)
-slide.addEventListener('mouseleave', touchEnd)
-slide.addEventListener('mousemove', touchMove)
-})
-
-function touchStart(index) {
-    return function(event) {
-        console.log('start')
+function handleOtppaste(e){
+    const data = e.clipboardData.getData("text");
+    const value = data.split("");
+    if(value.length === inputs.length){
+        inputs.forEach((input, index) => (input.value = value[index]))
+        submit();
     }
 }
-function touchEnd(){
-    console.log('end')
+function handleOtp(e){
+    const input = e.target;
+    let value = input.value;
+    input.value ="";
+    input.value = value ? value[0] : "";
+
+    let fieldIndex = input.dataset.index;
+    if(value.length > 0 && fieldIndex < inputs.length - 1){
+        input.nextElementSibling.focus();
+    }
+    if(e.key === "Backspace" && fieldIndex > 0){
+        input.previousElementSibling.focus();
+    }
+    if(fieldIndex == inputs.length - 1){
+        submit();
+    }
+    
 }
-function touchMove(){
-    console.log('move')
+function submit(){
+    console.log("Submitting ...");
+    let otp = "";
+    inputs.forEach((input) =>{
+        otp += input.value;
+        input.disabled = true;
+        input.classList.add("disable");
+    });
+    console.log(otp);
 }
