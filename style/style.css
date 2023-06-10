@@ -462,4 +462,148 @@ input.home{
     line-height: 24px;
 
 }
+/*home 1 styles*/
+.container{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0 1.5%;;
+}
+.hello-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 18px;
+    margin-top: 50px;
+}
+.hello-container p{
+    width: 80%;
+    height: 18px;
+    top: 65px;
+    margin-left: 3%;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.15px;
+    color: #000000;
+}
+.notification-icon{
+    width: 48px;
+    height:48px;
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notification-icon img{
+    height: 35px;
+    width: 25px;
+}
+.wallet-balance-cont{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #0d438b;
+}
+.wallet-balance-cont .title{
+    width: 50%;
+}
+.wallet-balance-cont .title p{
+    width: 90px;
+    height: 16px;
+    top: 111px;
+    left: 28px;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    
+}
+.balance-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.balance{
+    width: 50;
+    height: 25px;
+    left: 28px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+.fund-account-btn{
+    background-color: #fff;
+    width: 96px;
+    width: 35%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.fund-account-btn a{
+    text-decoration: none;
+    font-family: 'sora';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+}
+.account-number{
+    margin-top: 20px;
+    width: 80%;
+}
+.account-number p{
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+}
+.quick-access{
+    width: 100%;
+    height: 400px;
+    margin-top: 25px;
+}
+.quick-access-title{
+    padding: 0 1.5%;
+    width: 50%;
+    margin-left: 2.5%;
+}
+ .icons{
+    position: absolute;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 39px;
+    margin-top: 15px;
+    margin-left: -7px;
+}
+ .icon{
+    position: relative;  
+    width: 48px;
+    height: 48px;
+    top: 0px;
+    
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+ .icon-img{
+    width: 22.52px;
+    height: 19px;
+    top: 127px;
+}
+ .icon-img-2{
+    width: 18px;
+}
 }
