@@ -464,10 +464,9 @@ input.home{
 }
 /*home 1 styles*/
 .container{
-    border: 1px solid black;
     width: 100%;
     height: auto;
-    padding: 0 1.5%;;
+    padding: 0;
 }
 .hello-container{
     display: flex;
@@ -543,8 +542,7 @@ input.home{
 }
 .fund-account-btn{
     background-color: #fff;
-    width: 96px;
-    width: 36%;
+    width: 37%;
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -606,11 +604,17 @@ input.home{
     width: 16px;
 }
 .transaction-history{
-    margin-top: -280px;
+    margin-top: -260px;
 }
 .transaction-history-contents{
-    w100%
+    width: 100%;
    
+}
+.transaction-history-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 .transaction-history .header{
     height: auto;
@@ -652,5 +656,80 @@ input.home{
 }
 .header a{
     text-decoration: none;
+    color: #0d438b;
+}
+.transaction-history-content-text{
+    margin-left: 2.5%;
+}
+.img-name-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transaction-history-content-text h2{
+    width: 142px;
+    height: 16px;
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2c2c38;
+    
+}
+.transaction-history-content-text p{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #898f9e
+}
+.transaction-history-content-img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    position: relative;
+}
+.transaction-history-content-img img{
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+}
+.amount{
+    width: 100%;
+}
+.amount p{
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #2c2c38
+}
+.footer{
+    width: 99.7%;
+    position: fixed;
+    margin-top: -300px;
+    margin-left: -3.5%;
+    background-color: #f5f5f5;
+    height: 90px;
+}
+.footer-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15%;
+}
+.footer-icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon3{
+    width: 18px;
+    height: 18.73px;
 }
 }
