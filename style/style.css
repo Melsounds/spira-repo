@@ -543,7 +543,7 @@ input.home{
 .fund-account-btn{
     background-color: #fff;
     width: 96px;
-    width: 35%;
+    width: 36%;
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -595,9 +595,8 @@ input.home{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid rgba(0, 0, 0, 0.15);
     border-radius: 5px; 
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(152, 138, 138, 0.15);
 }
  .icon-img{
     width: 22.52px;
@@ -605,6 +604,6 @@ input.home{
     top: 127px;
 }
  .icon-img-2{
-    width: 18px;
+    width: 16px;
 }
 }
