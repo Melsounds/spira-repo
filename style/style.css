@@ -466,6 +466,7 @@ input.home{
 .container{
     border: 1px solid black;
     width: 100%;
+    height: auto;
     padding: 0 1.5%;;
 }
 .hello-container{
@@ -578,9 +579,7 @@ input.home{
     font-family: 'sora';
 }
  .icons{
-    position: absolute;
-    width: 89.5%;
-    display: grid;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -605,5 +604,53 @@ input.home{
 }
  .icon-img-2{
     width: 16px;
+}
+.transaction-history{
+    margin-top: -280px;
+}
+.transaction-history-contents{
+    w100%
+   
+}
+.transaction-history .header{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+}
+.transaction-history .title{
+    padding-bottom: 50px;
+}
+.title p,h2{
+    text-align-last: left;
+    font-family: 'sora';
+    font-weight: 400;
+}
+.transaction-history .title h2{
+   
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+}
+.transaction-history .title p{
+    font-size: 11px;
+    line-height: 16px;
+    color: #52596e;
+    margin-top: 15px;
+    width: 50%;
+    margin-left: 10px;
+}
+.header-btn{
+    text-align: right;
+    margin-top: -35px;
+    width: 65px;
+    height: 14px;
+    font-family: 'sora';
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 65%;
+}
+.header a{
+    text-decoration: none;
 }
 }
