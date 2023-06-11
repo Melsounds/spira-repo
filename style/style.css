@@ -9,10 +9,11 @@ html,body{
         background-color: #f5f5f5;
         height: 100%;
         width: 100%;
-        /*overflow-x: hidden;*/
-        padding: 0 0.5rem;
+        overflow-x: hidden;
+        
     }
 
+    
 .home-page p{
     width: 107px;
     height: 40px;
@@ -28,16 +29,25 @@ html,body{
     text-align: center;
     margin-left: 40%;
 }
-.onboarding{
+.slider-container{
+    display: inline-flex;
+    height: 100vh;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
+.slide{
     max-height: 100vh;
-    width: 93vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     user-select: none;
+    padding: 0 0.5rem;
 }
-.onboarding p{
+.slide p{
     width: 50%;
     height: 40px;
     top: 399px;
@@ -49,9 +59,13 @@ html,body{
     font-family: 'Baumans';
     color:#0d438b;
 }
-.onboarding img{
-    max-width: 80%;
-    min-height: 50%;
+.slide-img{
+    width: 70%;
+    margin-top: 70px;
+}
+.slide img{
+    max-width: 100%;
+    min-height: 55%;
     margin-top: 20px;
 }
 p.p2{
@@ -83,18 +97,19 @@ p.p2{
     justify-content: center;
     color: #fff;
 }
-
-.onboarding .span{
+.grabbing{
+    cursor:grabbing;
+}
+.slide .span{
     width: 80%;
-    height: 24px;
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
+    margin-left: 0%;
 }
-.onboarding .span p{
+.slide .span p{
     font-family: 'sora';
     font-style: normal;
     font-weight: 400;
@@ -105,9 +120,10 @@ p.p2{
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    width: 70%;
 }
-.onboarding .span .sign-in-btn{
+.slide .span .sign-in-btn{
     width: 51px;
     height: 24px;
     font-family: 'sora';
@@ -122,7 +138,7 @@ p.p2{
     cursor: pointer;
     
 }
-.onboarding .span a{
+.slide .span a{
     text-decoration: none;
 }
 /*create account-1 styles*/
@@ -748,10 +764,8 @@ input.home{
 .loan-eligibility-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 10px; 
-    padding-left: 30px; 
-    padding-bottom: 35px;
-   
+    padding-top: 10px;
+    padding-left: 30px;  
 }
 .loan-eligibility-content-text{
     width: 150%;
@@ -777,9 +791,9 @@ input.home{
 .loan-eligibility-content-img{
     width: 68px;
     height: 74px;
-    margin-left: 60%;
+    margin-left: 0%;
     margin-top: 20px;
-    position: absolute;
+   /* position: absolute;*/
 }
 .loan-eligibility-content-img img{
     width: 100%;
@@ -799,6 +813,7 @@ input.home{
     font-weight: 400;
     font-size: 11px;
     line-height: 24px;
+    margin-top: 20px;
 }
 
 }
