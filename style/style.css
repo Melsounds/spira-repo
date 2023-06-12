@@ -19,7 +19,7 @@ html,body{
     height: 100vh;
     z-index: 1000;
     display: none;
-    background: #000;
+    background-color: #000;
   }  
   #preloader p{
     width: 107px;
@@ -230,7 +230,7 @@ label{
     margin-left: 40%;
 }
 input{
-    width: 100%;
+    width: 90%;
     padding: 15px 20px;
     background: #f7f7f7;
     outline: none;
