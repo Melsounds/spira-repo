@@ -1,3 +1,11 @@
+var preloader = document.querySelector(".preloader");
+window.addEventListener("load", vanish);
+
+function vanish() {
+    preloader.classList.add("disappear")
+}
+
+
 const inputs = document.querySelectorAll(".otp-number input");
 inputs.forEach((input, index) =>{
     input.dataset.index = index;
