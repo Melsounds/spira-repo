@@ -12,15 +12,14 @@ html,body{
         overflow-x: hidden;   
     }
 
-    #preloader{
+    .preloader{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 1000;
-    display: none;
-    background-color: #000;
+    z-index: 100;
+    background-color: #f5f5f5;
   }  
-  #preloader p{
+  .preloader p{
     width: 107px;
     height: 40px;
     font-family: 'baumans';
@@ -34,7 +33,17 @@ html,body{
     color: #0d438b;
     text-align: center;
     margin-left: 40%;
-    position: fixed;
+}
+.disappear{
+    animation: vanish 1s forwards;
+    transition-delay: 5s;
+    
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden
+    }
 }
 .slider-container{
     display: inline-flex;
