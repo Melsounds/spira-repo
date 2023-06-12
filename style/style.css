@@ -13,8 +13,14 @@ html,body{
         
     }
 
-    
-.home-page p{
+  #homepage{
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+  }  
+#homepage p{
+   
     width: 107px;
     height: 40px;
     font-family: 'baumans';
@@ -49,7 +55,7 @@ html,body{
 }
 .slide p{
     width: 50%;
-    height: 40px;
+    height: auto;
     top: 399px;
     margin-left: -64px;
     font-weight: 400;
@@ -69,7 +75,7 @@ html,body{
     margin-top: 20px;
 }
 p.p2{
-    width: 65%;
+    width: 75%;
     height: 80px;
     margin-top: 50px;
     margin-left: 30px;
@@ -116,7 +122,6 @@ p.p2{
     font-size: 12px;
     line-height: 24px;
     text-align: center;
-    color: #87878c;
     display: flex;
     align-items: center;
     justify-content: right;
