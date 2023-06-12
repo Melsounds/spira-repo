@@ -152,6 +152,7 @@ p.p2{
     display: flex;
     align-items: center;
     margin-top: 50px;
+    padding: 0 3%;
 }
 .back-arrow{
     width: 16px;
@@ -171,7 +172,7 @@ p.p2{
 .header .title{
     width: 100%;
     height: 24px;
-    margin-left: 0%;
+    margin-left: 20%;
     text-align: center;
     
 }
@@ -196,10 +197,12 @@ p.p2{
     line-height: 24px;
     color: #2c2c38;
     text-align: none;
+    margin-left: 5%;
 }
 .instruction{
     width: 90%;
     margin-top: 20px;
+    margin-left: 3%;
 }
 .instruction p{
     font-family: 'sora';
@@ -212,7 +215,8 @@ p.p2{
 form{
     width: 96%;
     height: auto;
-    margin-left: 1%;
+    margin-left: 0%;
+    padding: 3%;
     margin-top: 35px;
 }
 label{
@@ -230,7 +234,7 @@ label{
     margin-left: 40%;
 }
 input{
-    width: 90%;
+    width: 100%;
     padding: 15px 20px;
     background: #f7f7f7;
     outline: none;
@@ -287,6 +291,7 @@ input.home{
     grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
     grid-gap: 20px;
+    padding: 0 5%;
 }
 .otp{
     display: flex;
@@ -323,7 +328,7 @@ input.home{
     width: 77%;
     height: 48px;
     margin-top: 300px;
-    margin-left: 24px;
+    margin-left: 54px;
     border-radius: 8px;
     padding: 24px;
     background-color: #0d438b;
@@ -395,6 +400,9 @@ input.home{
     line-height: 24px;
 }
 /*welcome back styles*/
+.welcome-back{
+    
+}
 .welcome-back .header{
     display: flex;
     align-items: center;
@@ -488,7 +496,7 @@ input.home{
 .container{
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 0 5%;
 }
 .hello-container{
     display: flex;
@@ -647,15 +655,17 @@ input.home{
 }
 .transaction-history .title{
     padding-bottom: 50px;
+
 }
 .title p,h2{
     text-align-last: left;
     font-family: 'sora';
     font-weight: 400;
+    
 }
 .transaction-history .title h2{
-   
     font-size: 12px;
+    margin-left: -25%;
     line-height: 14px;
     color: #000;
 }
@@ -665,7 +675,7 @@ input.home{
     color: #52596e;
     margin-top: 15px;
     width: 50%;
-    margin-left: 10px;
+    margin-left: -25%;
 }
 .header-btn{
     text-align: right;
@@ -675,7 +685,7 @@ input.home{
     font-family: 'sora';
     font-size: 12px;
     line-height: 14px;
-    margin-left: 80%;
+    margin-left: 65%;
 }
 .header a{
     text-decoration: none;
