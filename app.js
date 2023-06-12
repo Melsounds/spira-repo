@@ -1,3 +1,9 @@
+var loader = document.getElementsByClass('.homepage')
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
 
 const inputs = document.querySelectorAll(".otp-number input");
 inputs.forEach((input, index) =>{
