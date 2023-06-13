@@ -19,7 +19,7 @@ html,body{
     z-index: 100;
     background-color: #f5f5f5;
   }  
-  .preloader p{
+  .preloader h1{
     width: 107px;
     height: 40px;
     font-family: 'baumans';
@@ -29,7 +29,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50vh 0;
+    padding: 0;
     color: #0d438b;
     text-align: center;
     margin-left: 40%;
@@ -100,7 +100,7 @@ p.p2{
 .btn{
     width: 77%;
     height: 48px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 24px;
     border-radius: 8px;
     padding: 24px;
@@ -202,11 +202,12 @@ p.p2{
 
 .account-details-content .title{
     font-family: 'sora';
-    font-weight: bold;
+    font-weight: 600;
     line-height: 24px;
     color: #2c2c38;
     text-align: none;
     margin-left: 5%;
+    font-size: 18px;
 }
 .instruction{
     width: 90%;
@@ -250,6 +251,10 @@ input{
     border: 1px solid #e6e8ec;
     border-radius: 12px;
     margin-bottom: 20px;
+    align-self: stretch;
+    color: #898f9e;
+    font-size: 12px;
+    font-weight: 500;
 }
 .gm{
     display: flex;
@@ -277,7 +282,7 @@ input{
     justify-content: center;
 }
 .form-input input{
-    padding: 15px 60px;
+    padding: 15px 50px;
 }
 input.home{
     height: 96px;
@@ -285,7 +290,7 @@ input.home{
 }
 .icon{
     position: absolute;
-    left: 20px;
+    left: 10px;
     top: 10px;
     display: flex;
     align-items: center;
@@ -409,9 +414,7 @@ input.home{
     line-height: 24px;
 }
 /*welcome back styles*/
-.welcome-back{
-    
-}
+
 .welcome-back .header{
     display: flex;
     align-items: center;
@@ -449,8 +452,10 @@ input.home{
     width: 100%;
     height: 32px;
     margin-top: 20px;
+    flex-direction: column;
 }
 .welcome-back .text h3{
+    width: 100%;
     font-family: 'sora';
     font-weight: 600;
     font-size: 21px;
@@ -751,7 +756,7 @@ input.home{
 .footer{
     width: 99.7%;
     position: fixed;
-    margin-top: -300px;
+    margin-top: -140px;
     margin-left: -3.5%;
     background-color: #f5f5f5;
     height: 90px;
@@ -839,6 +844,207 @@ input.home{
     font-size: 11px;
     line-height: 24px;
     margin-top: 20px;
+}
+.header2{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+.title2{
+    padding-bottom: 50px;
+
+}
+.title2 p,h2{
+    text-align-last: left;
+    font-family: 'sora';
+    font-weight: 400;
+    
+}
+.title2 h2{
+    font-size: 12px;
+    margin-left: 0%;
+    line-height: 14px;
+    color: #000;
+}
+.title2 p{
+    font-size: 11px;
+    line-height: 16px;
+    color: #52596e;
+    margin-top: 35px;
+    width: 100%;
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header2-btn{
+    text-align: right;
+    margin-top: 0px;
+    width: 65px;
+    height: 14px;
+    font-family: 'sora';
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 60%;
+}
+.header2 a{
+    text-decoration: none;
+    color: #0d438b;
+}
+.transaction-icon{
+    width: 28.49px;
+    height: 25.54px;
+    margin-left: 50%;
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.transaction-icon img{
+    width: 100%;
+}
+.loader{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader img{
+    width: 100%;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+text p{
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    color: #000
+}
+.container{
+    height: 100%;
+}
+.loan-offers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 90%;
+    background-color: #f5f5f5;
+    z-index: 100;
+}
+.loan-offers2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+.payment-plan{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.payment-plan-title{
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.12px;
+    color: #031b4a;
+    
+}
+.payment-plan p{
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.64px;
+    color: #031b4a;
+    margin-top: 20px;
+    text-align: center;
+}
+.payment-info{
+    border: 2px solid #fff;
+    background: #fff8f3;
+    padding: 0 10px;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 95%;
+}
+.payment-info span{
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: #b3bac5;
+}
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.heading-title{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11.93px;
+    color: #505f79;
+    flex-direction: column;
+}
+.interest{
+    font-family: 'sora';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15.12px;
+    color: #031b4a
+}
+
+.terms-conditions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+.terms-conditions p{
+    font-family: 'sora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #b1b5c3;
+}
+#select{
+    width: 100%;
+    padding: 15px 20px;
+    background: #f7f7f7;
+    outline: none;
+    border: 1px solid #e6e8ec;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    align-self: stretch;
+    color: #2c2c38;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'sora';
+    line-height: 20px;
 }
 
 }
