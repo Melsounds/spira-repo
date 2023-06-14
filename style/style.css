@@ -33,6 +33,7 @@ html,body{
     color: #0d438b;
     text-align: center;
     margin-left: 40%;
+    margin-top: 150px;
 }
 .disappear{
     animation: vanish 1s forwards;
@@ -67,7 +68,7 @@ html,body{
 .slide p{
     width: 50%;
     height: auto;
-    top: 399px;
+    top: 699px;
     margin-left: -64px;
     font-weight: 400;
     font-size: 48px;
@@ -932,6 +933,7 @@ text p{
 }
 .container{
     height: 100%;
+    overflow: hidden;
 }
 .loan-offers{
     display: flex;
@@ -955,7 +957,7 @@ text p{
     z-index: 1;
 }
 .payment-plan{
-    margin-top: 50px;
+    margin-top: -15px;
     margin-left: 20px;
 }
 .payment-plan-title{
@@ -1022,7 +1024,7 @@ text p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: -10px;
 }
 .terms-conditions p{
     font-family: 'sora';
