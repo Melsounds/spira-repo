@@ -229,7 +229,6 @@ form{
     width: 96%;
     height: auto;
     margin-left: 0%;
-    padding: 3%;
     margin-top: 35px;
 }
 label{
@@ -247,7 +246,7 @@ label{
     margin-left: 40%;
 }
 input{
-    width: 100%;
+    width: 95%;
     padding: 15px 20px;
     background: #f7f7f7;
     outline: none;
