@@ -53,6 +53,7 @@ html,body{
     transform: translateX(0);
     transition: transform 0.3s ease-out;
     cursor: grab;
+    overflow: hidden;
 }
 .slide{
     max-height: 100vh;
@@ -190,9 +191,10 @@ p.p2{
     font-family: 'sora';
     font-style: normal;
     font-weight: bold;
-    font-size: 180%;
+    font-size: 24px;
     font-feature-settings: 'salt' on;
     color:#2c2c38;
+
 }
 .account-details{
     width: 100%;
@@ -755,10 +757,9 @@ input.home{
     color: #2c2c38
 }
 .footer{
-    width: 99.7%;
+    width: 100%;
     position: fixed;
-    margin-top: -140px;
-    margin-left: -3.5%;
+    margin-top: -90px;
     background-color: #f5f5f5;
     height: 90px;
 }
@@ -933,6 +934,11 @@ text p{
 }
 .container{
     height: 100%;
+    overflow-x: hidden;
+}
+
+.container2{
+    height: 100%;
     overflow: hidden;
 }
 .loan-offers{
@@ -958,7 +964,7 @@ text p{
 }
 .payment-plan{
     margin-top: -15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .payment-plan-title{
     font-family: 'sora';
@@ -998,7 +1004,6 @@ text p{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    
 }
 .heading{
     width: 100%;
@@ -1012,12 +1017,15 @@ text p{
     color: #505f79;
     flex-direction: column;
 }
+.heading-title p{
+    font-size: 13px;
+}
 .interest{
     font-family: 'sora';
     font-weight: 700;
     font-size: 12px;
     line-height: 15.12px;
-    color: #031b4a
+    color: #031b4a;
 }
 
 .terms-conditions{
@@ -1035,7 +1043,7 @@ text p{
 }
 #select{
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 15px;
     background: #f7f7f7;
     outline: none;
     border: 1px solid #e6e8ec;
@@ -1047,6 +1055,7 @@ text p{
     font-weight: 400;
     font-family: 'sora';
     line-height: 20px;
+    cursor: pointer;
 }
 
 }
