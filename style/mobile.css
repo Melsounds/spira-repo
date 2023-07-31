@@ -1056,5 +1056,7 @@ text p{
     line-height: 20px;
     cursor: pointer;
 }
-
+.bigger-device{
+    display: none;
+}
 }
