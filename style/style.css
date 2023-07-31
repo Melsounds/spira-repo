@@ -1,8 +1,398 @@
 @media screen and (min-width:769px) {
-    body{
-        background: #000;
+    *{
+        margin: 0;
+        padding: 0;
     }
     .mobile{
         display: none;
     }
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    nav{
+        width: 99.90%;
+        padding: 20px 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+    nav .logo{
+        width: 180px;
+        height: 27px;
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .logo img{
+        width: 80%;
+    }
+    nav h2{
+        width: 50%;
+        height: 40px;
+        top: 281px;
+        left: 643px;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        margin-right: 5%;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 80%;
+    }
+    .header{
+        width: 100%;
+        padding: 100px 0%;
+        background: #000;
+    }
+    .header h2{
+        color:#fff;
+        width: 100%;
+        height: auto;
+        font-size: 48px;
+        text-align: center;
+    }
+    .header p{
+        color: #fff;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
+    .btn{
+        width: 150px;
+        padding: 12.5px 5%;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-left: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ec5602;
+    }
+    .btn:hover{
+        background-color: #fff;
+        transition: .3s ease-in-out;
+    }
+    .btn a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .btn a:hover{
+        color:#ec5602;
+        transition: .3s ease-in-out;
+    }
+    .main-container{
+        border: 1px solid red;
+        height: auto;
+    }
+    .guide-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .guide-title h2{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .guide-title::after{
+        content: '';
+        width: 120px;
+        background-color:#ec5602;
+        height: 4px;
+        margin-top: 80px;
+        margin-right: 0%;
+        position: absolute;
+    }
+    .guide-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+    .guide-info-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -20%;
+    }
+    .number{
+        width: 50px;
+        height: 50px;
+        border-radius: 0%;
+        background: #3B7DD4;
+        position: absolute;
+        left: 80px;
+        border-radius: 50%;
+        top: 750px;
+        background: #3B7DD4;   
+    }
+    .number p{
+        position: absolute;
+        width: 9px;
+        height: 40px;
+        left: 25%;
+        top: -20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+
+    }
+    .guide-info-left h2{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 30px;
+        width: 60%;
+        margin-left: 10%;
+    }
+    .guide-info-left p{
+        font-weight: 400;
+        font-style: 24px;
+        line-height: 40px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .guide-info-right{
+        margin-left: -10%;
+        margin-right: 5%;
+    }
+    .blank-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .blank{
+        width: 100%;
+        margin-right: 0%;
+        height: 320px;
+        border-radius: 8px;
+        background-color: #d9d9d9;
+    }
+    .guide-info-right2 {
+        width: 70%;
+        margin-left: 30%;
+    }
+    .number2{
+        left: 960px;
+        top: 1130px;   
+    }
+    .number2 p{
+        left: 20%;
+        top: -20px;
+    }
+    .guide-info-right2 h2{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 30px;
+        width: 80%;
+    }
+    .guide-info-right2 p{
+        font-weight: 400;
+        font-style: 24px;
+        line-height: 40px;
+        width: 69%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+   .guide-info-left2{
+    margin-left: 8%;
+        margin-right: -10%;
+   }
+    .blank-container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blank2{
+        width: 100%;
+        margin-left: 0%;
+        height: 320px;
+        border-radius: 8px;
+        background-color: #d9d9d9;
+    }
+    .number3{
+        left: 70px;
+        top: 1600px;   
+    } 
+    .price-container{
+        width: 99%;
+    }
+    .price-container-title{
+        margin-top: 100px;
+    }
+    .price-container-text{
+        width: 40.5%;
+        margin-left: 27%;
+        margin-top: 50px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .blank3{
+        width: 75%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .getting-started-container{
+        border: 1px solid black;
+        width: 99.90%;
+    }
+    .getting-started{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid yellow;
+    }
+    .getting-started-left{
+        width: 100%;
+    }
+    .getting-started-title {
+        width: 95%;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border: 1px solid yellow;
+    }
+    .getting-started-text{
+        margin-left: 50px;
+        margin-top: 40px;
+        border: 1px solid black;
+        width: 30%;
+    }
+    .list-container{
+        /*width: 100%;*/
+        border: 1px solid green;
+    }
+    .list-items{
+        /*width: 100%;*/
+        border: 1px solid purple;
+    }
+    .list-item{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 7%;
+        border: 1px solid green;
+    }
+    .list-item-img img{
+        width: 26px;
+        height: 26px;
+    }
+    .list-item-text{
+        margin-left: 2%;
+        width: 68%;
+        line-height: 30px;
+        border: 1px solid black;
+    }
+    .list-item-text p{
+        width: 100%;
+    }
+    .apply{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        height: 148px;
+        width: 63%;
+        margin-left: 7%;
+        background:#d9d9d9;
+        border-radius: 8px;
+        padding: 0 5%;
+        margin-bottom: 100px;
+    }
+    .apply p{
+        width: 400px;
+        border: 1px solid black;
+    }
+    .btn2{
+        margin-top: 0;
+       width: 405px;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 6%;
+    }
+    .btn2 a{
+        font-size: 14px;
+    }
+    .circle{
+        width: 70%;
+        height: 398px;
+        border-radius: 50%;
+        background: #000;
+    }
+    .getting-started-right{
+        width: 100%;
+        border: 1px solid red;
+    }
+    .questions-container{
+        margin-bottom: 50px;
+    }
+    .questions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .circle2{
+        margin-left: 20%;
+    }
+    .getting-started-text h4{
+        font-weight: 500;
+        font-size: 36px;
+        text-align: left;
+    }
+    .question-right-title h2{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .question-right-text p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+    .footer-container{
+        background: #000;
+        width: 100%;
+        height: 506px;
+    }
 }
+
+
+
+
