@@ -12,8 +12,213 @@
 ="stylesheet">
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
 </head>
-<body style="padding: 0px 20px">
+<body class="main-content">
+    <div class="bigger-device">
+        <nav>
+            <div class="logo">
+                <img src="images/credfi.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Our Company</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">contact us</a></li>
+            </ul>
+        </nav>
+        
+            <!----------------Reminder for tomorrow:  Put loan type content inside form content container------------->
+            
+            <div class="form-content">
+                <div class="loan-type">
+                    <div class="loantype-header">
+                        <div class="loantype-title">
+                            <h2>
+                                Select loan type
+                            </h2>
+                        </div>
+                        <div class="btns">
+                            <div class="active-btn button btn1" onclick="personal()">
+                                <img src="images/personal-icon-active.png" class="personal-active">
+                                <p>Personal</p>
+                            </div>
+                            <div class="button btn2" onclick="business()">
+                                <img src="images/business-icon-inactive.png" alt="">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <form action="" id="personalForm">
+                        <div class="form-left">
+                            <label for="">First name</label>
+                            <input type="text"placeholder="Enter your First name" required>
+                            <label for="">Other name (Optional)</label>
+                            <input type="text" placeholder="Enter your Other name(s)">
+                            <label for="">Employer name</label>
+                            <input type="text" required>
+                            <label for="">Last month salary</label>
+                            <input type="text">
+                            <label for="">Do you have a non-salary income</label>
+                            <div class="btns">
+                                <div class="active-btn  button btn1" data-id="personal">
+                                    <p>Yes</p>
+                                </div>
+                                
+                                <div class="button btn2" data-id="business">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <label for="">Other names</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-right">
+                            <label for="">Last name</label>
+                            <input type="text" placeholder="Enter your last name">
+                            <label for="">Phone number</label>
+                            <input type="phone_number" placeholder="Enter your phone number">
+                            <label for="">Employer Industry</label>
+                            <select name="" id="">
+                                <option value="" id="option" >Choose an Industry</option>
+                                <option value="" id="option" >Technology</option>
+                                <option value="" id="option" >Media</option>
+                                <option value="" id="option" >Civil Servant</option>
+                                <option value="" id="option" >Self Employed</option>
+                                <option value="" id="option" >Agriculture</option>
+                            </select>
+                            <label for="">Employment start date</label>
+                            <input type="datetime">
+                            <label for="">what is your non-salary income</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="info-use-container">
+                            <div class="info-use">
+                                <div class="info-use-info">
+                                    <p>
+                                        Here's how we use your personal information and that of your company directors, beneficial owners or guarantors.
+                                        (Please make them aware of this before you provide their information to us)
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            We'll share it with credit refernce agencies to run soft credit and identity check - this won't affect your 
+                                            (or their) personal credit scores (note: we Sep ask you to provide a personal guarantee, so we'll only conduct credit
+                                            checks on you and any other guarantors)
+                                        </li>
+                                        <li>
+                                            We'll share it with fraud prevention agencies - if we spot any fraudulent information, you could be refused services,
+                                            finance, or employment.
+                                        </li>
+                                        <li>
+                                            We might record your calls with us.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        If you'd like to find out more, check our privacy policy.
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        Credfinance Ltd is the data controller.
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="" id="businessForm">
+                        <div class="form-left">
+                            <label for="">Business name</label>
+                            <input type="text" placeholder="Enter your Business name" required>
+                            <label for="">Website (Optional)</label>
+                            <input type="text" placeholder="www.Example.com">
+                            <label for="">Where is your business location</label>
+                            <select name="" id="">
+                                <option value="">Select a state</option>
+                                <option value="">Abia</option>
+                                <option value="">Adamawa</option>
+                                <option value="">AkwaIbom</option>
+                                <option value="">Anambra</option>
+                                <option value="">Bauchi</option>
+                                <option value="">Benue</option>
+                                <option value="">Borno</option>
+                                <option value="">Cross river</option>
+                                <option value="">Delta</option>
+                                <option value="">Edo</option>
+                                <option value="">Enugu</option>
+                                <option value="">Ekiti</option>
+                                <option value="">Imo</option>
+                                <option value="">Jigawa</option>
+                                <option value="">Katsina</option>
+                                <option value="">Kaduna</option>
+                                <option value="">Kano</option>
+                                <option value="">Kebbi</option>
+                                <option value="">Kogi</option>
+                                <option value="">Kwara</option>
+                                <option value="">Lagos</option>
+                                <option value="">Osun</option>
+                                <option value="">Ogun</option>
+                                <option value="">Ondo</option>
+                                <option value="">Oyo</option>
+                                <option value="">Plateau</option>
+                                <option value="">Sokoto</option>
+                                <option value="">Taraba</option>
+                                <option value="">Yobe</option>
+                                <option value="">Zamfara</option>
+                                <option value="">Select a state</option>
+                                <option value="">Select a state</option>
+                                <option value="">Select a state</option>
+                                <option value="">Select a state</option>
+                                <option value="">Select a state</option>
+                                <option value="">Select a state</option>
+                                
+                            </select>
+                            <label for="">Is your business registered</label>
+                            <div class="btns">
+                                <div class="active-btn  button btn1" data-id="personal">
+                                    <p>Yes</p>
+                                </div>
+                                
+                                <div class="button btn2" data-id="business">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <label for="">What does your business do?</label>
+                            <select name="" id="">
+                                <option value="" id="option" >Select your business type</option>
+                                <option value="" id="option" >Technology</option>
+                                <option value="" id="option" >Media</option>
+                                <option value="" id="option" >Civil Servant</option>
+                                <option value="" id="option" >Self Employed</option>
+                                <option value="" id="option" >Agriculture</option>
+                            </select>
+                            <label for="">When did you start the business?</label>
+                            <input type="datetime" placeholder="MM/YYYY">
+                            <label for="">Business address</label>
+                            <input type="text" placeholder="Enter address">
+                            <label for="">Employment start date</label>
+                            <input type="text">
+                        </div>
+                    </form>
+                     
+                        <button class="button personal-info-btn" onclick="personalInfoForm()">
+                            <p>Next, add your personal information</p>
+                        </button>
+
+
+                    <form action="" id="personalInfoForm">
+
+                    </form>
+                </div>
+    </div>          
+    <div class="mobile">
     <div class="header">
         <div class="back-arrow">
             <a href="index.html"><img src="images/Vector(1).png" class="vector1"></a>
@@ -22,6 +227,7 @@
             <p>Create account</p>
         </div>
 </div>
+
 <div class="account-details">
     <div class="account-details-content">
         <div class="title">
@@ -46,9 +252,9 @@
             <label>Date Of Birth</label>
             <input type="text" class="input">
 
-            <label>Gender</label><label class="label3">Marital Status</label>
+            <label class="label3">Gender</label><label class="label4">Marital Status</label>
         <div class="gm">
-            <input type="text" class="input2"><input type="text" class="input3">
+            <input type="text" class="input3"><input type="text" class="input4">
         </div>
 
             <label>BVN</label>
@@ -58,5 +264,70 @@
         </form>
     </div>
 </div>
+</div>
+<script>
+    
+
+const sectBtns  = document.querySelectorAll('.btns');
+const sectBtn = document.querySelectorAll('.button');
+const personalInfoBtn = document.querySelectorAll('.personal-info-btn')
+const allSections = document.querySelectorAll('.main-content');
+var personalForm = document.getElementById("personalForm"); 
+var businessForm = document.getElementById("businessForm");
+var personalInfoForm = document.getElementById("personalInfoForm");
+
+
+function business(){
+    businessForm.style.transform = "translateX(0px)";
+    personalForm.style.transform = "translateX(0px)";
+    personalInfoForm.style.transform = "translateX(0px)";
+    
+}
+function personal(){
+    businessForm.style.transform = "translateX(100%)";
+    personalForm.style.transform = "translateX(100%)"; 
+    personalInfoForm.style.transform = "translateX(100%)";
+}
+
+function personalInfoForm(){
+     personalInfoForm.style.transform = "translateX(200%)";     
+}
+
+
+
+
+
+
+    function pageChange(){
+    for(let i = 0; i < sectBtn.length; i++){
+        sectBtn[i].addEventListener('click', function(){
+            let currentBtn = document.querySelectorAll('.active-btn');
+            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
+            this.className += ' active-btn';
+        })
+    }
+}
+//active section
+allSections[0].addEventListener('click', (e) =>{
+    const id = e.target.dataset.id;
+    if(id){
+        //remove selected from others
+        sectBtn.forEach((btn) =>{
+            btn.classList.remove('active')
+        })
+        e.target.classList.add('active')
+
+        //hide other sections
+        sections.forEach((section)=>{
+            section.classList.remove('active')
+        })
+
+        const element = document.getElementById(id);
+        element.classList.add('active');
+    }
+})
+
+pageChange();
+</script>
 </body>
 </html>
