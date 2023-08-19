@@ -1,4 +1,4 @@
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
 *{
     box-sizing: border-box;
     margin: 0;
@@ -240,10 +240,10 @@ label{
     font-size: 12px;
     line-height: 16px;
     color: #52596e;
-    margin-left: 10px;
+    margin-left: 28px;
 }
-.label3{
-    margin-left: 40%;
+.label4{
+    margin-left: 44.5%;
 }
 input{
     width: 95%;
@@ -261,16 +261,16 @@ input{
 .gm{
     display: flex;
 }
-.input2{
+.input3{
     width: 100%;
-    margin-left: 0%;
+    margin-left: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.input3{
+.input4{
     width: 100%;
-    margin-left: 10px;
+    margin-right: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
