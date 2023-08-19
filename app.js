@@ -85,7 +85,7 @@ function touchStart(index){
         startPos = getPositionX(event)
         isDragging = true
 
-        animationID = requestAnimationFrame(animation)
+        animationID = requestAnimationFrame(animationID)
         slider.classList.add('grabbing')
     }
 }
