@@ -6,9 +6,10 @@
     <title>Sign in</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
 </head>
 <body>
-    
+    <div class="bigger-device">
         <div class="login-container">
             <div class="form-container">
                 <div class="logo-container">
@@ -22,7 +23,7 @@
                     <label for="">Password</label>
                     <input type="password">
                     <div class="forgot-password-btn">
-                        <a href="">Forgot password</a>
+                        <a href="forgot-password.html">Forgot password</a>
                     </div>
                     <div class="login-btn">
                         <a href="">Sign in</a>
@@ -40,7 +41,43 @@
                 </form>
             </div>
         </div>
-    
+    </div>
+        <div class="mobile">
+            <div class="header">
+                <div class="back-arrow">
+                    <a href="index.html"><img src="images/Vector(1).png" class="vector1"></a>
+                </div>
+            <div class="logo-cont">
+                <img src="images/logo (4).png" class="logo">
+            </div>
+        </div>
+        <div class="account-details">
+            <div class="account-details-content">
+                <div class="title">
+                    <p>Welcome back</p>
+                </div>
+                
+                <form action="">
+                    <label>Phone number</label>
+                    <div class="form-input">
+                        <div class="icon"><img src="images/NG - Nigeria.png" alt=""></div>
+                        <input type="phone_no" name="phone_no" required>
+                    </div>
+                    <label>Pin</label>
+                        <input type="password" name="pin" required />
+                </form>
+                <div class="forgot-password">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+                <a href="" class="btn" style="margin-top:20px;margin-left: 10%">Sign in</a>
+        
+                <div class="span">
+                    <p>Don't own an account?</p>
+                    <div class="sign-in-btn"><a href="create-account1.html" style="color: #eb5757">Create account</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
     
 </body>
 </html>
