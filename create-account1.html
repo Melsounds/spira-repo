@@ -206,15 +206,89 @@
                             <label for="">Employment start date</label>
                             <input type="text">
                         </div>
-                    </form>
-                     
-                        <button class="button personal-info-btn" onclick="personalInfoForm()">
+                        <button class="button personal-info-btn" onclick="personalInfo()">
                             <p>Next, add your personal information</p>
                         </button>
+                    </form>
+                     
+                        
 
 
                     <form action="" id="personalInfoForm">
-
+                        <div class="form-left">
+                        <label for="">Full name</label>
+                        <div class="name-info">
+                            <select name="" id="">
+                                <option value="">Title</option>
+                                <option value="">Mr</option>
+                                <option value="">Mrs</option>
+                                <option value="">Miss</option>
+                                <option value="">Dr</option>
+                                <option value="">Engr</option>
+                            </select>
+                            <input type="text" placeholder="Firstname">
+                            <input type="text" placeholder="Lastname">
+                        </div>
+                        <div class="contact-info">
+                            <label for="">Home Address</label>
+                            <input type="text">
+                            <label for="">Phone no</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-numbers">
+                            <label for="">Is Your business registered?</label>
+                            <div class="count">
+                                <div class="one button active-btn" data-id="personalInfoForm">1</div>
+                                <div class="one button">2</div>
+                                <div class="one button">3</div>
+                                <div class="one button">4</div>
+                                <div class="one button">5</div>
+                                <div class="one six button">6 or more</div>
+                            </div>
+                        </div>
+                        </div> 
+                        <div class="form-right">
+                            <label for="">Date of birth</label>
+                            <div class="name-info">
+                                <input type="text" placeholder="DD" style="width:89px">
+                                <select name="" id="" style="width: 100%">
+                                    <option value="">Month</option>
+                                    <option value="">January</option>
+                                    <option value="">Febuary</option>
+                                    <option value="">March</option>
+                                    <option value="">April</option>
+                                    <option value="">May</option>
+                                    <option value="">June</option>
+                                    <option value="">July</option>
+                                    <option value="">Mrs</option>
+                                    <option value="">August</option>
+                                    <option value="">September</option>
+                                    <option value="">October</option>
+                                    <option value="">November</option>
+                                    <option value="">December</option>
+                                </select>
+                                
+                                <input type="text" placeholder="YYYY">
+                            </div>
+                            <div class="contact-info">
+                                <label for="">Residential Status</label>
+                                <select name="" id="">
+                                    <option value="">
+                                        Select your residential status
+                                    </option>
+                                </select>
+                                <label for="">Additional Phone no</label>
+                                <input type="text" placeholder="00000000000">
+                            </div>
+                            <div class="input-numbers">
+                                <label for="">Employment start Date</label>
+                                <input type="text">
+                            </div>
+                            
+                        </div>
+                        <button class="button personal-info-btn" onclick="personalInfo()">
+                            <p>Next, add your personal information</p>
+                        </button>
                     </form>
                 </div>
     </div>          
@@ -277,20 +351,25 @@ var businessForm = document.getElementById("businessForm");
 var personalInfoForm = document.getElementById("personalInfoForm");
 
 
-function business(){
-    businessForm.style.transform = "translateX(0px)";
-    personalForm.style.transform = "translateX(0px)";
-    personalInfoForm.style.transform = "translateX(0px)";
-    
-}
+
 function personal(){
-    businessForm.style.transform = "translateX(100%)";
-    personalForm.style.transform = "translateX(100%)"; 
-    personalInfoForm.style.transform = "translateX(100%)";
+    businessForm.style.transform = "translateX(0%)";
+    personalForm.style.transform = "translateX(0%)"; 
+    personalInfoForm.style.transform = "translateX(0%)";
 }
 
-function personalInfoForm(){
-     personalInfoForm.style.transform = "translateX(200%)";     
+
+function business(){
+    businessForm.style.transform = "translateX(-100%)";
+    personalForm.style.transform = "translateX(-100%)";
+    personalInfoForm.style.transform = "translateX(-100%)";
+    
+}
+
+function personalInfo(){
+    businessForm.style.transform = "translateX(-200%)";
+    personalForm.style.transform = "translateX(-200%)";
+     personalInfoForm.style.transform = "translateX(-200%)";     
 }
 
 
@@ -313,17 +392,17 @@ allSections[0].addEventListener('click', (e) =>{
     if(id){
         //remove selected from others
         sectBtn.forEach((btn) =>{
-            btn.classList.remove('active')
+            btn.classList.remove('active-btn')
         })
-        e.target.classList.add('active')
+        e.target.classList.add('active-btn')
 
         //hide other sections
         sections.forEach((section)=>{
-            section.classList.remove('active')
+            section.classList.remove('active-btn')
         })
 
         const element = document.getElementById(id);
-        element.classList.add('active');
+        element.classList.add('active-btn');
     }
 })
 
