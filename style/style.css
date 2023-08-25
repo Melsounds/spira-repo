@@ -55,7 +55,7 @@
         text-decoration: none;
         color: #000;
         font-weight: 500;
-        font-size: 80%;
+        font-size: 24px;
     }
     nav ul li a:hover{
         background: #000;
@@ -239,7 +239,7 @@
         margin-top: 25px;
     }
    .guide-info-left2{
-    margin-left: 8%;
+        margin-left: 8%;
         margin-right: -10%;
    }
     .blank-container2{
@@ -512,9 +512,7 @@
         color: #000;
         text-decoration: none;
     }
-    .mobile{
-        display: none;
-    }
+    
     input::placeholder{
         font-size: 24px;
         font-weight: 400;
@@ -828,6 +826,9 @@
     .six{
         width: 135px;
     }
+    .mobile{
+        display: none;
+    } 
 }
 
 
