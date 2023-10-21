@@ -95,19 +95,16 @@
         align-items: center;
         justify-content: center;
         background-color: #ec5602;
-    }
-    .btn:hover{
-        background-color: #fff;
-        transition: .3s ease-in-out;
-    }
-    .btn a{
         color: #fff;
         text-decoration: none;
         font-weight: 700;
         font-size: 24px;
     }
-    .btn a:hover{
+    
+    .btn:hover{
         color:#ec5602;
+        transition: .3s ease-in-out;
+        background-color: #fff;
         transition: .3s ease-in-out;
     }
     .main-container{
